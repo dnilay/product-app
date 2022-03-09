@@ -17,6 +17,7 @@ public class ProductController {
     {
         return ResponseEntity.ok(Product.builder().productId(UUID.randomUUID().toString()).productName("Pen").price(20).build());
     }
+    //post mapping
     @PostMapping("/products")
     public ResponseEntity<Product> createProduct(Product product)
     {
